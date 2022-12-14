@@ -57,9 +57,15 @@ do
         end
       })
       menu_group:new_button({
-        text = "Copy JobId",
+        text = "Copy GameID",
         callback = function()
           return setclipboard("Roblox.GameLauncher.joinGameInstance(" .. tostring(game.PlaceId) .. ", \"" .. tostring(game.JobId) .. "\")")
+        end
+      })
+      menu_group:new_button({
+        text = "Copy Discord Link",
+        callback = function()
+          return setclipboard("DISCORDLINK")
         end
       })
       menu_group:new_button({
